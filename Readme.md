@@ -37,7 +37,8 @@ If you want new modules just send me a request :)
 ---------------------------------------------------------------------------------------------------------------
                            Picture of the Ai's Helping tool menu.
 
-![tg](https://user-images.githubusercontent.com/93089744/149834323-ed317c76-cdce-41a8-8cb2-0f36aba92bb8.png)
+
+![l](https://user-images.githubusercontent.com/93089744/150659511-cc7f8d94-adc8-48ac-96be-ff97cfa83a7f.png)
 
 
 ------------------------------------------------------------------------------
