@@ -1,0 +1,179 @@
+#!/usr/bin/bash
+clear
+
+
+#- variales -----
+# status of project
+stat="BETA"
+versionname="1.0.0-2022"
+releasedate="Null"
+
+
+
+#test1 function er i brug så du kan ikke bruge den...
+
+
+
+figlet -f standard "APOLLO"
+echo "-( $stat )----------------------Termux----"
+
+#greeting section
+
+
+  echo "[VI]. Version info"
+  echo "[R]. Reload program"
+  echo "[DATE]. Show date"
+  echo "[MOD]. Module Manager"
+  echo "[EXIT]. Exit APOLLO"
+  echo "[IP]. Show IP info"
+  echo "[STORAGE]. Show storage"
+  echo "[NANO]. Edit program files"
+  echo "[APT]. Install program"
+
+echo "-------------------------------------------"
+echo "-------Type a Option and press Enter-------"
+echo "-------------------------------------------"
+
+
+
+read -p "TERMUX/:~$ " name
+
+if [[ $name == NANO ]];
+then
+nano ai
+
+
+elif [[ $name == VI ]];
+then
+clear && figlet -f standard "APOLLO"
+     echo "-( $stat )----------Termux APOLLO Version--"
+     echo "APOLLO TERMUX AI Version: $versionname "
+     echo "Release date: $releasedate "
+     echo "Version status: $stat "
+     echo "-------------------------------------------"
+     echo "------------Press Enter to exit------------"
+     echo "-------------------------------------------"
+    read exitfromvi
+     if [[ $exitfromvi == "" ]];
+     then clear && bash ai
+     else clear && bash ai
+   fi
+
+
+
+
+
+
+
+
+elif [[ $name == R ]];
+then bash ai
+
+
+elif [[ $name == DATE ]];
+then
+clear && figlet -f standard "APOLLO"
+     echo "-( $stat )---------------------Date info---"
+    date
+     echo "-------------------------------------------"
+     echo "------------Press Enter to exit------------"
+     echo "-------------------------------------------"
+    read exitfromdate
+     if [[ $exitfromdate == "" ]];
+     then clear && bash ai
+     else clear && bash ai
+   fi
+
+
+elif [[ $name == APT ]];
+then bash apt.mod
+
+
+elif [[ $name == MOD ]];
+then
+clear && figlet -f standard "APOLLO"
+     echo "-( $stat )----------------Module Manager---"
+     echo "- Apt Installer Module ( APTIM )( File name: apt.mod)"
+     echo "- Encrypter/Decrypter ( ENCDECM )( File name: enc.mod)"
+     echo "[LS]. List all .mod files"
+     echo "-------------------------------------------"
+     echo "------------Press Enter to exit------------"
+     echo "-------------------------------------------"
+
+# this part was pure pain to make...
+# function to simulate a very bad goto statement...
+function test1(){
+clear && figlet -f standard "APOLLO"
+     echo "-( $stat )----------------Module Manager---"
+     echo "- Apt Installer Module ( APTIM )( File name: apt.mod)"
+     echo "[LS]. List all .mod files"
+     echo "-------------------------------------------"
+     echo "------------Press Enter to exit------------"
+     echo "-------------------------------------------"
+ read exitfrommod
+            if [[ $exitfrommod == "" ]];
+              then clear && bash ai
+
+            elif [[ $exitfrommod == LS ]];
+             then ls *.mod && sleep 3s && test1
+
+
+
+             else clear && bash ai
+
+            fi
+
+
+}
+#end of the goto simulation
+
+
+          read exitfrommod
+            if [[ $exitfrommod == "" ]];
+              then clear && bash ai
+
+            elif [[ $exitfrommod == LS ]];
+             then ls *.mod && sleep 3s && test1
+
+
+
+             else clear && bash ai
+
+            fi
+
+
+elif [[ $name == EXIT ]];
+then clear && bash
+
+
+elif [[ $name == IP ]];
+then
+clear && figlet -f standard "APOLLO"
+     echo "-( $stat )---------Internet Protocol Inf---"
+    ifconfig
+     echo "-------------------------------------------"
+     echo "------------Press Enter to exit------------"
+     echo "-------------------------------------------"
+          read exitfromip
+            if [[ $exitfromip == "" ]];
+        then clear && bash ai
+               fi
+
+
+elif [[ $name == STORAGE ]];
+then
+clear && figlet -f standard "APOLLO"
+   echo "-( $stat )----------------------Termux----"
+  df -h
+   echo "-------------------------------------------"
+   echo "------------Press Enter to exit------------"
+   echo "-------------------------------------------"
+       read exitfromstorage
+      if [[ $exitfromstorage == "" ]];
+         then clear && bash ai
+      fi
+
+
+
+else echo "Sorry you need to type a valid option..." && sleep 1s && bash ai
+fi

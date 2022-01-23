@@ -1,0 +1,3 @@
+To install the AI Repos use "sudo bash install.sh" and then type "Yes" and press Enter.
+
+Once that is done use the command "sudo bash ai" inside of the APOLLO-Package folder.
