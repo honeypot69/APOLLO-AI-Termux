@@ -1,5 +1,5 @@
-# APOLLO-AI
-
+# APOLLO-AI-Termux
+Join the Discord! https://discord.gg/Hdgfcqj2
 
 Dont mind my bad English. Im just a small danish devoloper :)
 
