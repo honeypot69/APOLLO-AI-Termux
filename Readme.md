@@ -46,7 +46,7 @@ If you want new modules just send me a request :)
 
 
 
-First run the command "git clone https://github.com/HoneyPot69/APOLLO-AI.git"
+First run the command "git clone https://github.com/honeypot69/APOLLO-AI-Termux.git"
 
 then cd into the directory called "APOLLO-AI" then cd into "APOLLO-Package" and type "ls" then there should be displayed these files:
 
